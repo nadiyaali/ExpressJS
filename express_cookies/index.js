@@ -3,7 +3,7 @@ const app = express()
 // npm install cookie-parser
 const cookieParser = require("cookie-parser")
 //app.use(cookieParser())
-//Signed cookie
+//Signed cookie, store the cookie secret in .env file, make sure .env file is mentioned in .git ignore
 app.use(cookieParser("thisismysecret"))
 
 app.get("/greet", (req,res)=>{
