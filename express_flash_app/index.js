@@ -1,3 +1,4 @@
+// packages required : express, mongoose, method-override
 const express = require("express")
 const app = express()
 const path= require("path")
